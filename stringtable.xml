@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="Arma2">
+	<Package ID="Missions">
+		<Container ID="A3RU_MissionInformation">
+			<!-- Информация о миссии (На английской раскладке) -->
+			<Key ID="STR_A3RU_MissionAuthor">
+				<Original>
+				Author
+				</Original>
+			</Key> 
+			<Key ID="STR_A3RU_MissionName">
+				<Original>
+				Mission Name
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_MissionDesc">
+				<Original>
+				Mission Description
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_MissionIntel">
+				<Original>
+				Общее описание задания для всех сторон.
+				</Original>
+			</Key>
+			
+			<!-- Описание задач для BLUEFOR (WEST) -->
+			<Key ID="STR_A3RU_BF_MissionTasks">
+				<Original>
+				Описание задач миссии&lt;br/&gt;И другая важная информация.
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_BF_MissionEnemy">
+				<Original>
+				Информация о противнике
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_BF_MissionAdditional">
+				<Original>
+				Дополнительная информация
+				</Original>
+			</Key>
+			
+			<!-- Описание задач для OPFOR (EAST) -->
+			<Key ID="STR_A3RU_OF_MissionTasks">
+				<Original>
+				Описание задач миссии&lt;br/&gt;И другая важная информация.
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_OF_MissionEnemy">
+				<Original>
+				Информация о противнике
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_OF_MissionAdditional">
+				<Original>
+				Дополнительная информация
+				</Original>
+			</Key>
+		</Container>
+		
+		<Container ID="A3RU_Base">
+			<Key ID="STR_A3RU_startTime">
+				<Original>
+				Start Time
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_startFog">
+				<Original>
+				Start Fog
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_fog_1">
+				<Original>
+				Light Fog less than 20m above terrain
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_fog_2">
+				<Original>
+				Light Fog less than 50m above terrain
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_fog_3">
+				<Original>
+				Medium Fog less than 100m above terrain
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_fog_4">
+				<Original>
+				Heavy Fog
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_default">
+				<Original>
+				Default
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_tags">
+				<Original>
+				Player Tags
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_on">
+				<Original>
+				On
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_off">
+				<Original>
+				Off
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_preTime">
+				<Original>
+				Prepare Time
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_Intel">
+				<Original>
+				Mission Overview
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_Info">
+				<Original>
+				Mission Info
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_Tasks">
+				<Original>
+				Tasks
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_Enemy">
+				<Original>
+				Enemy
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_Additional">
+				<Original>
+				Additional Info
+				</Original>
+			</Key>
+		</Container>
+		<Container ID="A3RU_WeaponSelect">
+			<Key ID="STR_A3RU_weap_primary">
+				<Original>
+				Основное оружие
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_secondary">
+				<Original>
+				Гранатомет
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_side">
+				<Original>
+				Пистолет
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_mods">
+				<Original>
+				Модули
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_backpack">
+				<Original>
+				Рюкзак
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_equip">
+				<Original>
+				Взять выбранное оружие
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_note">
+				<Original>
+				Можно выбрать только ОДИН раз!!!
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_noweap">
+				<Original>
+				Оружие отсутствует
+				</Original>
+			</Key>
+			<Key ID="STR_A3RU_weap_notsel">
+				<Original>
+				Ничего не выбрано
+				</Original>
+			</Key>
+		</Container>
+	</Package>
+</Project>

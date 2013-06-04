@@ -1,0 +1,16 @@
+﻿// Written by Blender
+// Specially for ARMA3.RU
+
+#include "a3ru_setup\a3ru_header.hpp"
+#include "a3ru_setup\a3ru_parameters.hpp"
+//#include "a3ru_scripts\spectator\spectating.hpp"
+
+class A3RU_MissionParams {
+	#include "mission_parameters.hpp"
+};
+
+#include "a3ru_setup\a3ru_dialogs.hpp"
+
+class RscTitles {
+	#include "a3ru_setup\a3ru_rscTitles.hpp"
+};
