@@ -93,7 +93,7 @@ switch toUpper(_this) do {
 	case "AT": { // Rifleman (AT)
 		_e_prim = ["arifle_TRG20_F"];
 		_e_prim_mag = [
-			[["30Rnd_65x39_case_mag", 8],["30Rnd_65x39_case_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
+			[["30Rnd_556x45_Stanag", 8],["30Rnd_556x45_Stanag_Tracer_Yellow", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
 		_e_mod1 = [];
 		_e_mod2 = ["acc_flashlight", "acc_pointer_IR"];
@@ -105,7 +105,7 @@ switch toUpper(_this) do {
 		_e_items = ["ItemCompass", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
 		_e_back = ["B_AssaultPack_dgtl", "B_AssaultPack_cbr", "B_AssaultPack_khk", "B_AssaultPack_ocamo", "B_AssaultPack_rgr"];
 	};
-	case "SNIP": { // Sniper
+	case "MARK_TL": { // Marksman TL
 		_e_prim = ["arifle_MXM_F"];
 		_e_prim_mag = [
 			[["30Rnd_65x39_caseless_mag", 8], ["30Rnd_65x39_caseless_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
@@ -183,7 +183,7 @@ switch toUpper(_this) do {
 	case "MOR": { // Mortar Team
 		_e_prim = ["arifle_TRG20_F"];
 		_e_prim_mag = [
-			[["30Rnd_65x39_case_mag", 6], ["HandGrenade", 2], ["SmokeShell", 2]]
+			[["30Rnd_556x45_Stanag", 6], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
 		_e_mod1 = [];
 		_e_mod2 = ["acc_flashlight"];
@@ -198,7 +198,7 @@ switch toUpper(_this) do {
 	case "MED": { // Medic
 		_e_prim = ["arifle_TRG20_F"];
 		_e_prim_mag = [
-			[["30Rnd_65x39_case_mag", 6],["30Rnd_65x39_case_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
+			[["30Rnd_556x45_Stanag", 6],["30Rnd_556x45_Stanag_Tracer_Yellow", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
 		_e_mod1 = [];
 		_e_mod2 = ["acc_flashlight", "acc_pointer_IR"];
@@ -273,7 +273,7 @@ switch toUpper(_this) do {
 	case "SPN_MED": { // Spes Medic
 		_e_prim = ["arifle_TRG21_F"];
 		_e_prim_mag = [
-			[["30Rnd_65x39_case_mag", 6],["30Rnd_65x39_case_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
+			[["30Rnd_556x45_Stanag", 6],["30Rnd_556x45_Stanag_Tracer_Yellow", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
 		_e_mod1 = ["muzzle_snds_H"];
 		_e_mod2 = ["acc_pointer_IR"];
@@ -284,6 +284,36 @@ switch toUpper(_this) do {
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
 		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "Medikit", ["FirstAidKit", 10]];
 		_e_back = ["B_FieldPack_oucamo"];
+	};
+	case "SNIPER": { // Sniper
+		_e_prim = ["srifle_LRR_F"];
+		_e_prim_mag = [
+			[["7Rnd_408_Mag", 6], ["HandGrenade", 2], ["SmokeShell", 2]]
+		];
+		_e_mod1 = [];
+		_e_mod2 = [];
+		_e_mod3 = ["optic_SOS"];
+		_e_sec = [];
+		_e_sec_mag = [];
+		_e_side = ["hgun_P07_snds_F"];
+		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
+		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "Rangefinder"];
+		_e_back = [];
+	};
+	case "SPOTTER": { // Spotter
+		_e_prim = ["arifle_MX_F"];
+		_e_prim_mag = [
+			[["30Rnd_65x39_caseless_mag", 6],["30Rnd_65x39_caseless_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
+		];
+		_e_mod1 = [];
+		_e_mod2 = [];
+		_e_mod3 = ["optic_Holosight"];
+		_e_sec = [];
+		_e_sec_mag = [];
+		_e_side = ["hgun_P07_snds_F"];
+		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
+		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "Rangefinder", ["FirstAidKit", 2]];
+		_e_back = [];
 	};
 };
 

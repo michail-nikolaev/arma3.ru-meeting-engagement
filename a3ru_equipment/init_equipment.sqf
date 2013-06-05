@@ -199,7 +199,10 @@ fnc_a3ru_weap_equip = {
 					case "medikit": {
 						_unit addItem _item;
 					};
-					case "Binocular": {
+					case "binocular": {
+						_unit addWeapon _item;
+					};
+					case "rangefinder": {
 						_unit addWeapon _item;
 					};
 				};
@@ -226,6 +229,9 @@ fnc_a3ru_weap_equip = {
 					_unit addItem _x;
 				};
 				case "binocular": {
+					_unit addWeapon _x;
+				};
+				case "rangefinder": {
 					_unit addWeapon _x;
 				};
 			};
@@ -405,11 +411,11 @@ while {!a3ru_weapon_closeCode} do {
 //
 // arifle_TRG20_F - TRG-20 6.5Â mm Carbine
 // [["muzzle_snds_H"],["acc_flashlight", "acc_pointer_IR"],["optic_ACO", "optic_ACO_grn", "optic_Hamr", "optic_Holosight", "optic_ARCO"]]
-// 30Rnd_65x39_case_mag, 30Rnd_65x39_case_mag_Tracer
+// 30Rnd_556x45_Stanag, 30Rnd_556x45_Stanag_Tracer_Yellow
 // 
 // arifle_TRG21_F - TRG-21 6.5Â mm
 // [["muzzle_snds_H"],["acc_flashlight", "acc_pointer_IR"],["optic_ACO", "optic_ACO_grn", "optic_Hamr", "optic_Holosight", "optic_ARCO"]]
-// 30Rnd_65x39_case_mag, 30Rnd_65x39_case_mag_Tracer
+// 30Rnd_556x45_Stanag, 30Rnd_556x45_Stanag_Tracer_Yellow
 //
 // arifle_TRG21_GL_F - TRG-21 6.5Â mm GL
 // [["muzzle_snds_H"],["acc_flashlight", "acc_pointer_IR"],["optic_ACO", "optic_ACO_grn", "optic_Hamr", "optic_Holosight", "optic_ARCO"]]

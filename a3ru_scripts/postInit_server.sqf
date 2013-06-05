@@ -7,6 +7,7 @@ _fnc_a3ru_srv_combatLosses = compile preprocessFileLineNumbers "a3ru_functions\a
 fnc_a3ru_endMissionCountUnits = compile preprocessFileLineNumbers "a3ru_functions\a3ru_endMissionCountUnits.sqf";
 fnc_a3ru_endMissionCapture = compile preprocessFileLineNumbers "a3ru_functions\a3ru_endMissionCapture.sqf";
 fnc_a3ru_endMissionDeadInZone = compile preprocessFileLineNumbers "a3ru_functions\a3ru_endMissionDeadInZone.sqf";
+fnc_a3ru_endMissionDeadInZones = compile preprocessFileLineNumbers "a3ru_functions\a3ru_endMissionDeadInZones.sqf";
 
 _a3ru_countDown = {
 	_prepareTime = a3ru_preTime;

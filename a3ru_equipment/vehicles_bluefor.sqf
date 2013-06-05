@@ -21,8 +21,8 @@ switch toLower(_template) do {
 	case "ba": { // Basic Ammo
 		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag", 10];
 		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag_Tracer", 5];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_case_mag", 5];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_case_mag_Tracer", 2];
+		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 5];
+		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Yellow", 2];
 		_veh addMagazineCargoGlobal ["20Rnd_556x45_UW_mag", 5];
 		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 10];
 		_veh addMagazineCargoGlobal ["HandGrenade", 5];
