@@ -38,6 +38,7 @@ switch toLower(_template) do {
 		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 2];
 		_veh addMagazineCargoGlobal ["HandGrenade", 5];
 		_veh addMagazineCargoGlobal ["SmokeShell", 2];
+		_veh addBackPackCargoGlobal ["a3ru_radio_r168", 1];
 
 	};
 	case "aa": { // AA Ammo
@@ -46,6 +47,7 @@ switch toLower(_template) do {
 		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 2];
 		_veh addMagazineCargoGlobal ["HandGrenade", 5];
 		_veh addMagazineCargoGlobal ["SmokeShell", 2];
+		_veh addBackPackCargoGlobal ["a3ru_radio_r168", 1];
 	};
 	case "sup": { // Support Ammo
 		_veh addMagazineCargoGlobal ["200Rnd_65x39_cased_Box", 5];
@@ -72,11 +74,13 @@ switch toLower(_template) do {
 		_veh addMagazineCargoGlobal ["APERSMine_Range_Mag", 2];
 		_veh addMagazineCargoGlobal ["APERSTripMine_Wire_Mag", 2];
 		_veh addMagazineCargoGlobal ["ATMine_Range_Mag", 2];
+		_veh addBackPackCargoGlobal ["a3ru_radio_r168", 1];
 	};
 	case "med": { // Medical equipment
 		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 10];
 		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 2];
 		_veh addWeaponCargoGlobal ["FirstAidKit", 10];
 		_veh addWeaponCargoGlobal ["Medikit", 2];
+		_veh addBackPackCargoGlobal ["a3ru_radio_r168", 1];
 	};
 };

@@ -5,56 +5,82 @@
 			<!-- Информация о миссии (На английской раскладке) -->
 			<Key ID="STR_A3RU_MissionAuthor">
 				<Original>
-				Author
+				Nkey
 				</Original>
 			</Key> 
 			<Key ID="STR_A3RU_MissionName">
 				<Original>
-				Mission Name
+				Meeting_Engagement
 				</Original>
 			</Key>
 			<Key ID="STR_A3RU_MissionDesc">
 				<Original>
-				Mission Description
+				Attack and defend, two new bases
 				</Original>
 			</Key>
 			<Key ID="STR_A3RU_MissionIntel">
 				<Original>
-				Общее описание задания для всех сторон.
+Уже год, как действует соглашение о прекращении огня, подписанное под давлением Совбеза ООН после обнародования данных о мирных жертвах и разрушениях в 
+&lt;marker name="bang1_marker"&gt;Agia Marine&lt;/marker&gt;
+и &lt;marker name="bang2_marker"&gt;прилегающих территориях&lt;/marker&gt;
+.&lt;br/&gt;
+На протяжение этого года противник неоднократно прибегал к различного рода провокациям, но сегодня
+они перешли все рамки дозволенного. &lt;br/&gt;
+Наш патрульный автомобиль попал под обстрел в
+&lt;marker name="car_position"&gt;указанном&lt;/marker&gt; радиусе, его комманда не отвечает. Ранее в этом же секторе
+был замечен автомобиль противника. Нет никаких сомнений, что это его рук дело.&lt;br/&gt;
 				</Original>
 			</Key>
 			
 			<!-- Описание задач для BLUEFOR (WEST) -->
 			<Key ID="STR_A3RU_BF_MissionTasks">
 				<Original>
-				Описание задач миссии&lt;br/&gt;И другая важная информация.
+Нам ничего не остается делать, кроме как вынудить противника покинуть остров.&lt;br/&gt;
+Основной задачей будет захват новой &lt;marker name="red_base_border"&gt;базы противника&lt;/marker&gt;.&lt;br/&gt;
+По данным разведки противник также планирует нападение - нам потребуется огранизовать оборону &lt;marker name="blue_base_border"&gt;собственной базы&lt;/marker&gt;.&lt;br/&gt;
+Желательно найти утерянный
+&lt;marker name="car_position"&gt;джип&lt;/marker&gt;,
+он оборудован тепловизором, который может пригодиться в ходе операции.
 				</Original>
 			</Key>
 			<Key ID="STR_A3RU_BF_MissionEnemy">
 				<Original>
-				Информация о противнике
+Количество базирующихся на острове солдат и техники рагламентировалось соглашением о прекращении огня, как следствие, противник обладает примерно такими же ресурсами.
 				</Original>
 			</Key>
 			<Key ID="STR_A3RU_BF_MissionAdditional">
 				<Original>
-				Дополнительная информация
+Боевой запас катера ограничен.&lt;br/&gt;
+Команда миномета имеет ДВ в ящике.&lt;br/&gt;
+Спецназ, тимлидеры и снайпера имеют Fireteam HUD.&lt;br/&gt;
+Джип где-то в рамках красного круга.&lt;br/&gt;
+Спасибо Dren's Editor.&lt;br/&gt;
 				</Original>
 			</Key>
 			
 			<!-- Описание задач для OPFOR (EAST) -->
 			<Key ID="STR_A3RU_OF_MissionTasks">
 				<Original>
-				Описание задач миссии&lt;br/&gt;И другая важная информация.
+Нам ничего не остается делать, кроме как вынудить противника покинуть остров.&lt;br/&gt;
+Основной задачей будет захват новой &lt;marker name="blue_base_border"&gt;базы противника&lt;/marker&gt;.&lt;br/&gt;
+По данным разведки противник также планирует нападение - нам потребуется огранизовать оборону &lt;marker name="red_base_border"&gt;собственной базы&lt;/marker&gt;.&lt;br/&gt;
+Желательно найти утерянный
+&lt;marker name="car_position"&gt;джип&lt;/marker&gt;,
+он оборудован тепловизором, который может пригодиться в ходе операции.
 				</Original>
 			</Key>
 			<Key ID="STR_A3RU_OF_MissionEnemy">
 				<Original>
-				Информация о противнике
+Количество базирующихся на острове солдат и техники рагламентировалось соглашением о прекращении огня, как следствие, противник обладает примерно такими же ресурсами.
 				</Original>
 			</Key>
 			<Key ID="STR_A3RU_OF_MissionAdditional">
 				<Original>
-				Дополнительная информация
+Боевой запас катера ограничен.&lt;br/&gt;
+Команда миномета имеет ДВ в ящике.&lt;br/&gt;
+Спецназ, тимлидеры и снайпера имеют Fireteam HUD.&lt;br/&gt;
+Джип где-то в рамках красного круга.&lt;br/&gt;
+Спасибо Dren's Editor.&lt;br/&gt;
 				</Original>
 			</Key>
 		</Container>

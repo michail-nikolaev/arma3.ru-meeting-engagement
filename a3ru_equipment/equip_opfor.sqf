@@ -237,7 +237,7 @@ switch toUpper(_this) do {
 		_e_sec_mag = [[["RPG32_F", 1]]];
 		_e_side = ["hgun_P07_snds_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
-		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
 		_e_back = [];
 	};
 	case "SPN_SN": { // Spes Sniper
@@ -252,7 +252,7 @@ switch toUpper(_this) do {
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
-		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
 		_e_back = [];
 	};
 	case "SPN_ES": { // Spes Explosive Specialist
@@ -267,7 +267,7 @@ switch toUpper(_this) do {
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
-		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
 		_e_back = ["B_AssaultPack_dgtl", "B_AssaultPack_cbr", "B_AssaultPack_khk", "B_AssaultPack_ocamo", "B_AssaultPack_rgr"];
 	};
 	case "SPN_MED": { // Spes Medic
@@ -282,7 +282,7 @@ switch toUpper(_this) do {
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
-		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "Medikit", ["FirstAidKit", 10]];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "Medikit", ["FirstAidKit", 10]];
 		_e_back = ["B_FieldPack_oucamo"];
 	};
 	case "SNIPER": { // Sniper
@@ -297,7 +297,7 @@ switch toUpper(_this) do {
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
-		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Rangefinder"];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Rangefinder"];
 		_e_back = [];
 	};
 	case "SPOTTER": { // Spotter
@@ -312,7 +312,7 @@ switch toUpper(_this) do {
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
-		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "Rangefinder", ["FirstAidKit", 2]];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Rangefinder", ["FirstAidKit", 2]];
 		_e_back = [];
 	};
 };
