@@ -32,7 +32,9 @@ class Mission
 		"A3_Structures_F_Ind_AirPort",
 		"A3_Structures_F_Walls",
 		"A3_Boat_F_Speedboat",
-		"A3_Boat_F_Assault_Boat"
+		"A3_Boat_F_Assault_Boat",
+		"a3_weapons_f_longrangerifles_gm6",
+		"a3_weapons_f_longrangerifles_m320"
 	};
 	addOnsAuto[]=
 	{
@@ -42,7 +44,7 @@ class Mission
 		"A3_Soft_F_Quadbike",
 		"A3_Static_F_Mk6",
 		"a3ru_mortar_fix",
-		"a3_soft_f_hunter",
+		"A3_Soft_F_Hunter",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Mil_TentHangar",
 		"A3_Structures_F_Mil_Barracks",
@@ -1498,7 +1500,7 @@ class Mission
 					id=97;
 					side="EAST";
 					vehicle="O_medic_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""MED""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
 					description="Medic";
@@ -1533,7 +1535,7 @@ class Mission
 					id=99;
 					side="EAST";
 					vehicle="O_spotter_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""SPOTTER""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
 					description="Spotter";
@@ -2051,11 +2053,11 @@ class Mission
 		class Item8
 		{
 			position[]={2630.2629,9.9777422,1231.6146};
-			azimut=415.04718;
+			azimut=415.047;
 			special="NONE";
 			id=138;
 			side="EMPTY";
-			vehicle="B_Hunter_HMG_F";
+			vehicle="B_Hunter_RCWS_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3134,7 +3136,7 @@ class Mission
 			azimut=-60.161999;
 			id=246;
 			side="EMPTY";
-			vehicle="O_Ifrit_MG_F";
+			vehicle="O_Ifrit_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""SUP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3144,7 +3146,7 @@ class Mission
 			azimut=-66.022903;
 			id=247;
 			side="EMPTY";
-			vehicle="O_Ifrit_GMG_F";
+			vehicle="O_Ifrit_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3227,11 +3229,11 @@ class Mission
 		class Item125
 		{
 			position[]={2615.4763,8.2872686,1218.0165};
-			azimut=60.769478;
+			azimut=60.769501;
 			special="NONE";
 			id=255;
 			side="EMPTY";
-			vehicle="B_Hunter_RCWS_F";
+			vehicle="B_Hunter_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3263,11 +3265,11 @@ class Mission
 		class Item128
 		{
 			position[]={2612.9041,8.257576,1222.3939};
-			azimut=60.769478;
+			azimut=60.769501;
 			special="NONE";
 			id=258;
 			side="EMPTY";
-			vehicle="B_Hunter_RCWS_F";
+			vehicle="B_Hunter_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";

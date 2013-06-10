@@ -1,9 +1,10 @@
 // OPFOR EQUIPMENT
 private ["_e_prim", "_e_prim_mag", "_e_mod1", "_e_mod2", "_e_mod3", "_e_sec", "_e_sec_mag", "_e_side", "_e_side_mag", "_e_items", "_e_back"];
+_wrong = false;
 
 switch toUpper(_this) do {
 	default {
-		hintC "WARNING! Wrong slot name in unit initialization!";
+		hintC "WARNING! Wrong slot name in unit initialization! More in diag log";
 		_e_prim = [];
 		_e_prim_mag = [];
 		_e_mod1 = [];
@@ -15,6 +16,7 @@ switch toUpper(_this) do {
 		_e_side_mag = [];
 		_e_items = [];
 		_e_back = [];
+		_wrong = true;
 	};
 	case "UNARMED": {
 		_e_prim = [];
@@ -313,8 +315,13 @@ switch toUpper(_this) do {
 		_e_side = ["hgun_P07_snds_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
 		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Rangefinder", ["FirstAidKit", 2]];
-		_e_back = [];
+		_e_back = ["a3ru_radio_r168"];
 	};
 };
 
-[_e_prim, _e_prim_mag, _e_mod1, _e_mod2, _e_mod3, _e_sec, _e_sec_mag, _e_side, _e_side_mag, _e_items, _e_back]
+
+if (_wrong) then {
+	[_e_prim, _e_prim_mag, _e_mod1, _e_mod2, _e_mod3, _e_sec, _e_sec_mag, _e_side, _e_side_mag, _e_items, _e_back, _wrong]
+} else {
+	[_e_prim, _e_prim_mag, _e_mod1, _e_mod2, _e_mod3, _e_sec, _e_sec_mag, _e_side, _e_side_mag, _e_items, _e_back]
+};

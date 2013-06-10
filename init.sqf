@@ -86,10 +86,12 @@ fnc_a3ru_endMission = compile preprocessFileLineNumbers "a3ru_functions\a3ru_end
 _script = [] execVM "a3ru_scripts\setMissionParams.sqf";
 waitUntil { scriptDone _script };
 
-{_x setdamage 1} foreach nearestObjects [bang1, [], 400];
-{_x setdamage 1} foreach nearestObjects [bang2, [], 400];
-{_x setdamage 1} foreach nearestObjects [bang3, [], 50];
-{_x setdamage 1} foreach nearestObjects [bang4, [], 50];
+if (isServer) then {
+	{_x setdamage 1} foreach nearestObjects [bang1, [], 400];
+	{_x setdamage 1} foreach nearestObjects [bang2, [], 400];
+	{_x setdamage 1} foreach nearestObjects [bang3, [], 50];
+	{_x setdamage 1} foreach nearestObjects [bang4, [], 50];
+};
 
 // PostInit
 waitUntil {time > 0};
