@@ -70,7 +70,7 @@ class Mission
 	randomSeed=7531956;
 	class Intel
 	{
-		briefingName="A3RU 126 Meeting Engagement";
+		briefingName="A3RU 126 Meeting Engagement (v0.3/0.875)";
 		overviewText="ARMA3.RU Meeting Engagement for 126 player";
 		timeOfChanges=7200;
 		startWeather=0.53999996;
