@@ -140,7 +140,7 @@ switch toUpper(_this) do {
 	case "D_TL": { // Diver Team Leader
 		_e_prim = ["arifle_SDAR_F"];
 		_e_prim_mag = [
-			[["20Rnd_556x45_UW_mag", 4], ["30Rnd_556x45_Stanag", 6], ["HandGrenade", 2], ["SmokeShell", 2]]
+			[["20Rnd_556x45_UW_mag", 2], ["30Rnd_556x45_Stanag", 5]]
 		];
 		_e_mod1 = [];
 		_e_mod2 = [];
@@ -148,9 +148,9 @@ switch toUpper(_this) do {
 		_e_sec = [];
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_F"];
-		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
+		_e_side_mag = [[["16Rnd_9x21_Mag", 2]]];
 		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
-		_e_back = ["B_AssaultPack_blk_DiverTL", "a3ru_radio_prc119"];
+		_e_back = ["a3ru_radio_prc119"];
 	};
 	case "D": { // Diver
 		_e_prim = ["arifle_SDAR_F"];
@@ -165,7 +165,7 @@ switch toUpper(_this) do {
 		_e_side = ["hgun_P07_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
 		_e_items = ["ItemCompass", "ItemMap", "ItemWatch", "NVGoggles", "FirstAidKit"];
-		_e_back = [];
+		_e_back = ["B_AssaultPack_blk"];
 	};
 	case "D_ES": { // Diver Explosive Specialist
 		_e_prim = ["arifle_SDAR_F"];
@@ -180,7 +180,7 @@ switch toUpper(_this) do {
 		_e_side = ["hgun_P07_F"];
 		_e_side_mag = [[["16Rnd_9x21_Mag", 4]]];
 		_e_items = ["ItemCompass", "ItemMap", "ItemWatch", "NVGoggles", "FirstAidKit"];
-		_e_back = ["B_AssaultPack_blk_DiverExp"];
+		_e_back = ["B_AssaultPack_blk"];
 	};
 	case "MOR": { // Mortar Team
 		_e_prim = ["arifle_TRG20_F"];

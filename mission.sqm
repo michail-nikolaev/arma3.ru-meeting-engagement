@@ -70,7 +70,7 @@ class Mission
 	randomSeed=7531956;
 	class Intel
 	{
-		briefingName="A3RU 126 Meeting Engagement (v0.3/0.875)";
+		briefingName="A3RU 126 Meeting Engagement (v0.4/0.876)";
 		overviewText="ARMA3.RU Meeting Engagement for 126 player";
 		timeOfChanges=7200;
 		startWeather=0.53999996;
@@ -118,7 +118,7 @@ class Mission
 				class Item1
 				{
 					position[]={4025.4492,140.32843,7039.8296};
-					azimut=-184.18294;
+					azimut=-184.183;
 					special="NONE";
 					id=1;
 					side="EAST";
@@ -179,7 +179,7 @@ class Mission
 				class Item3
 				{
 					position[]={3547.7185,1.6375666,7486.8247};
-					azimut=159.69101;
+					azimut=159.69099;
 					special="NONE";
 					id=5;
 					side="EAST";
@@ -270,7 +270,7 @@ class Mission
 					id=11;
 					side="EAST";
 					vehicle="O_Soldier_lite_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""MOR""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
@@ -639,7 +639,7 @@ class Mission
 				class Item0
 				{
 					position[]={2398.218,1.2324555,1128.3937};
-					azimut=-98.448639;
+					azimut=-98.448601;
 					special="NONE";
 					id=37;
 					side="WEST";
@@ -731,7 +731,7 @@ class Mission
 				class Item7
 				{
 					position[]={2395.8765,1.1361023,1127.6826};
-					azimut=-255.03326;
+					azimut=-255.033;
 					special="NONE";
 					id=44;
 					side="WEST";
@@ -744,7 +744,7 @@ class Mission
 				class Item8
 				{
 					position[]={2395.9722,1.1468688,1126.5109};
-					azimut=-307.06689;
+					azimut=-307.06699;
 					special="NONE";
 					id=45;
 					side="WEST";
@@ -1535,7 +1535,7 @@ class Mission
 					id=99;
 					side="EAST";
 					vehicle="O_spotter_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""SPOTTER""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
 					description="Spotter";
@@ -1551,7 +1551,7 @@ class Mission
 				class Item0
 				{
 					position[]={2436.8047,2.5876958,1127.9274};
-					azimut=-387.0004;
+					azimut=-387;
 					special="NONE";
 					id=100;
 					side="WEST";
@@ -1565,7 +1565,7 @@ class Mission
 				class Item1
 				{
 					position[]={2439.0369,2.7179477,1129.2831};
-					azimut=-387.0004;
+					azimut=-387;
 					special="NONE";
 					id=101;
 					side="WEST";
@@ -1971,7 +1971,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=134;
+		items=136;
 		class Item0
 		{
 			position[]={3609.7012,11.313872,7423.6919};
@@ -2024,11 +2024,12 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={3595.0972,5.9916077,7454.5195};
+			position[]={3595.1428,5.978653,7454.5649};
 			id=135;
 			side="EMPTY";
 			vehicle="O_Mk6";
 			skill=0.60000002;
+			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
 		};
 		class Item6
 		{
@@ -2132,15 +2133,16 @@ class Mission
 		class Item15
 		{
 			position[]={2436.9431,2.7593908,1134.8716};
-			azimut=-24.519297;
+			azimut=-24.5193;
 			id=145;
 			side="EMPTY";
 			vehicle="B_Mk6";
 			skill=0.60000002;
+			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
 		};
 		class Item16
 		{
-			position[]={3592.7747,5.8754768,7455.5435};
+			position[]={3590.3113,5.7011213,7456.7529};
 			azimut=-253.36964;
 			id=146;
 			side="EMPTY";
@@ -2150,7 +2152,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={2435.4238,2.760905,1134.2727};
+			position[]={2432.6799,2.690547,1132.7756};
 			azimut=-118.8334;
 			id=147;
 			side="EMPTY";
@@ -2554,7 +2556,7 @@ class Mission
 		};
 		class Item62
 		{
-			position[]={4045.6309,140.41829,7031.5386};
+			position[]={4039.4937,141.04907,7026.166};
 			azimut=471.92923;
 			id=192;
 			side="EMPTY";
@@ -3328,6 +3330,25 @@ class Mission
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
+		class Item134
+		{
+			position[]={3592.7476,5.8761048,7455.5469};
+			id=264;
+			side="EMPTY";
+			vehicle="O_Mk6";
+			skill=0.60000002;
+			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
+		};
+		class Item135
+		{
+			position[]={2434.8091,2.7434132,1133.9292};
+			azimut=-24.5193;
+			id=265;
+			side="EMPTY";
+			vehicle="B_Mk6";
+			skill=0.60000002;
+			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
+		};
 	};
 	class Markers
 	{
@@ -3362,7 +3383,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={4045.5579,140.43983,7031.4116};
+			position[]={4039.397,141.05211,7026.105};
 			name="map1_1";
 			markerType="RECTANGLE";
 			type="b_hq";
@@ -3370,7 +3391,7 @@ class Mission
 			fillName="SolidBorder";
 			a=9;
 			b=9;
-			angle=-68.2257;
+			angle=-157.64085;
 			drawBorder=1;
 		};
 		class Item4
