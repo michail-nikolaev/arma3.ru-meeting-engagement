@@ -71,7 +71,7 @@ class Mission
 	class Intel
 	{
 		briefingName="A3RU 126 Meeting Engagement (v0.4/0.876)";
-		overviewText="ARMA3.RU Meeting Engagement for 126 player";
+		overviewText="ARMA3.RU Meeting Engagement for 126 players";
 		timeOfChanges=7200;
 		startWeather=0.53999996;
 		startFog=0.16;
