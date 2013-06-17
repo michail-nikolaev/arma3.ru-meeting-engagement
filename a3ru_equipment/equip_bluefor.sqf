@@ -148,7 +148,7 @@ switch toUpper(_this) do {
 		_e_sec = [];
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_F"];
-		_e_side_mag = [[["16Rnd_9x21_Mag", 2]]];
+		_e_side_mag = [[["16Rnd_9x21_Mag", 1]]];
 		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
 		_e_back = ["a3ru_radio_prc119"];
 	};

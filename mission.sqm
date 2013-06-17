@@ -70,7 +70,7 @@ class Mission
 	randomSeed=7531956;
 	class Intel
 	{
-		briefingName="A3RU 126 Meeting Engagement (v0.4/0.876)";
+		briefingName="A3RU 126 Meeting Engagement (v0.41/0.876)";
 		overviewText="ARMA3.RU Meeting Engagement for 126 players";
 		timeOfChanges=7200;
 		startWeather=0.53999996;
@@ -144,7 +144,7 @@ class Mission
 					id=2;
 					side="EAST";
 					vehicle="O_diver_TL_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""D_TL""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
@@ -270,7 +270,7 @@ class Mission
 					id=11;
 					side="EAST";
 					vehicle="O_Soldier_lite_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""MOR""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
@@ -3352,7 +3352,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=50;
+		items=49;
 		class Item0
 		{
 			position[]={4009.8777,143.11934,7034.4229};
@@ -3807,12 +3807,6 @@ class Mission
 		};
 		class Item42
 		{
-			position[]={225.43637,0.35520819,7943.4219};
-			name="temp";
-			type="mil_flag";
-		};
-		class Item43
-		{
 			position[]={3753.8667,194.02991,4522.1162};
 			name="car_position";
 			markerType="ELLIPSE";
@@ -3823,7 +3817,7 @@ class Mission
 			b=1000;
 			drawBorder=1;
 		};
-		class Item44
+		class Item43
 		{
 			position[]={3609.9675,4.0142975,7463.1611};
 			name="red_base_border";
@@ -3835,7 +3829,7 @@ class Mission
 			b=200;
 			drawBorder=1;
 		};
-		class Item45
+		class Item44
 		{
 			position[]={2516.6436,3.7486923,1181.083};
 			name="blue_base_border";
@@ -3847,7 +3841,7 @@ class Mission
 			b=200;
 			drawBorder=1;
 		};
-		class Item46
+		class Item45
 		{
 			position[]={2560.0513,4.8226557,1182.2225};
 			name="map1_2_1_3_1_1_2_1_2";
@@ -3860,7 +3854,7 @@ class Mission
 			angle=57.483078;
 			drawBorder=1;
 		};
-		class Item47
+		class Item46
 		{
 			position[]={2551.2988,4.5719814,1177.4154};
 			name="map1_2_1_3_1_1_2_1_2_1";
@@ -3873,7 +3867,7 @@ class Mission
 			angle=57.483078;
 			drawBorder=1;
 		};
-		class Item48
+		class Item47
 		{
 			position[]={2516.6436,3.7486923,1181.083};
 			name="blue_base_1";
@@ -3885,7 +3879,7 @@ class Mission
 			b=200;
 			drawBorder=1;
 		};
-		class Item49
+		class Item48
 		{
 			position[]={3609.9675,4.0142975,7463.1611};
 			name="red_base_1";
