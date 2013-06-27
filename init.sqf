@@ -93,6 +93,7 @@ if (isServer) then {
 	{_x setdamage 1} foreach nearestObjects [bang4, [], 50];
 };
 
+
 // PostInit
 waitUntil {time > 0};
 

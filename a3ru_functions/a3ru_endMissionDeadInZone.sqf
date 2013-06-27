@@ -3,7 +3,10 @@
 // Example: ["mark_port", 0, "West Port", [vip1, vip2], 1] spawn fnc_a3ru_endMissionDeadInZone;
 // Example: [[1520, 1321, 5], 150, "West Port", [vip1], 0] spawn fnc_a3ru_endMissionDeadInZone;
 
-private ["_zone", "_area", "_area_name", "_units", "_unitsInZone", "_winSide", "_zonePos", "_inZone", "_action", "_name"];
+private ["_BFSide", "_OFSide", "_zone", "_area", "_area_name", "_units", "_unitsInZone", "_winSide", "_zonePos", "_inZone", "_action", "_name"];
+
+_BFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "blueforSide"));
+_OFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "opforSide"));
 
 _zone = _this select 0;
 _area = _this select 1; 
@@ -13,8 +16,8 @@ _unitsInZone = _this select 4;
 
 if (_unitsInZone == 0) then { _unitsInZone = (count _units) };
 switch (side (_units select 0)) do {
-	case WEST: { _winSide = EAST };
-	case EAST: { _winSide = WEST };
+	case _BFSide: { _winSide = _OFSide };
+	case _OFSide: { _winSide = _BFSide };
 	default { _winSide = CIVILIAN };
 };
 

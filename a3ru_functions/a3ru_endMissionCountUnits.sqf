@@ -9,7 +9,10 @@
 // If you want to make for example vehicle defence mission you can use something like that:
 // [getPos myVehicle, 25, EAST, 5, "Vehicle defenders failed"] spawn fnc_a3ru_endMissionCountUnits;
 
-private ["_zone", "_area", "_side", "_minMan", "_message", "_zonePos", "_vehCount", "_man", "_veh", "_manCount"];
+private ["_BFSide", "_OFSide", "_zone", "_area", "_side", "_minMan", "_message", "_zonePos", "_vehCount", "_man", "_veh", "_manCount"];
+
+_BFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "blueforSide"));
+_OFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "opforSide"));
 
 _zone = _this select 0;
 _area = _this select 1; 
@@ -37,8 +40,8 @@ while {true} do {
 		};		
 	} forEach _veh;
 	if ((_manCount + _vehCount) < _minMan) exitWith {
-		_winSide = WEST;
-		if (_side == WEST) then { _winSide = EAST };
+		_winSide = _BFSide;
+		if (_side == _BFSide) then { _winSide = _OFSide };
 		[_message, _winSide] call fnc_a3ru_endMission;
 	};
 	sleep 5.213;

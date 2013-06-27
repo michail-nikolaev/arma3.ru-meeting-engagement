@@ -3,7 +3,7 @@ _target = cursorTarget;
 
 if !(isNull _target) then {
 	if (_target isKindOf "ship" && player distance _target < 5) then {
-		if (count (crew _target) > 0) exitWith {
+		if ({isPlayer _x} count (crew _target) > 0) exitWith {
 			hint parseText '<t color="#ff0000"><img image="\a3\ui_f\data\gui\cfg\cursors\hc_unsel_gs.paa"/></t> Boat should be <t color="#FFFF33">empty</t>!';
 		};
 		_dir = getDir player;

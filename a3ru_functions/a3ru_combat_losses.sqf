@@ -16,11 +16,11 @@ while {true} do {
 	_BFCount = {(alive _x) && (side _x == _BFSide)} count _A3RU_lossUnits;
 	_OFCount = {(alive _x) && (side _x == _OFSide)} count _A3RU_lossUnits;
 	if ((_OFCount * _sideSupremacy < _BFCount) || (_OFCount < _OFstart / 100 * _OFLoss)) exitWith {
-		[format["Opfor had heavy losses. Bluefor WIN.", _sideSupremacy], _BFSide] call fnc_a3ru_endMission;
+		[format["%1 had heavy losses. %2 WIN.", _OFSide, _BFSide], _BFSide] call fnc_a3ru_endMission;
 	};
 
 	if ((_BFCount * _sideSupremacy < _OFCount) || (_BFCount < _BFstart / 100 * _BFLoss)) exitWith {
-		[format["Bluefor had heavy losses. Opfor WIN.", _sideSupremacy], _OFSide] call fnc_a3ru_endMission;
+		[format["%1 had heavy losses. %2 WIN.", _BFSide, _OFSide], _OFSide] call fnc_a3ru_endMission;
 	};
 	sleep 7.326;
 };

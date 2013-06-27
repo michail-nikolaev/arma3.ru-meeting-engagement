@@ -6,7 +6,11 @@
 // ] spawn fnc_a3ru_endMissionDeadInZones
 // Example: [["mark_1", 0, vip1], ["mark_2", 0, vip2], ["mark_3", 0, vip3]] spawn fnc_a3ru_endMissionDeadInZones;
 
-private ["_winSide", "_array", "_checkArray"];
+private ["_BFSide", "_OFSide", "_winSide", "_array", "_checkArray"];
+
+_BFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "blueforSide"));
+_OFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "opforSide"));
+
 _array = _this;
 _checkArray = [];
 
@@ -28,8 +32,8 @@ _checkArray = [];
 	};
 	
 	switch (side _unit) do {
-		case WEST: { _winSide = EAST };
-		case EAST: { _winSide = WEST };
+		case _BFSide: { _winSide = _OFSide };
+		case _OFSide: { _winSide = _BFSide };
 		default { _winSide = CIVILIAN };
 	};
 	

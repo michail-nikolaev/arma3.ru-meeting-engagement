@@ -13,9 +13,9 @@ _fnc_a3ru_logo_rsc = {
 	_c1 ctrlSetPosition [safeZoneX - 0.5, (_c1Pos select 1) + 0.5];
 	_c2 ctrlSetPosition [safeZoneX - 0.5, _c2Pos select 1];
 	_c3 ctrlSetPosition [safeZoneX - 0.5, (_c3Pos select 1)];
-	_c1 ctrlSetStructuredText parseText format["<t align='center' size='2.5' color='#ffe92e'>Mission: %1</t>", localize "STR_A3RU_MissionName"];
+	_c1 ctrlSetStructuredText parseText format["<t align='center' size='1.2' color='#ffe92e'>Mission: %1</t>", localize "STR_A3RU_MissionName"];
 	_c1 ctrlCommit 0;
-	_c2 ctrlSetStructuredText parseText format["<t align='center' size='2.5' color='#ffe92e'>Author: %1</t>", localize "STR_A3RU_MissionAuthor"];
+	_c2 ctrlSetStructuredText parseText format["<t align='center' size='1.2' color='#ffe92e'>Author: %1</t>", localize "STR_A3RU_MissionAuthor"];
 	_c2 ctrlCommit 0;
 	_c3 ctrlSetStructuredText parseText format["<t align='left' size='2.5'>Atrium v%1</t>", getNumber (MissionConfigFile >> "atrium_version")];
 	_c3 ctrlCommit 0;

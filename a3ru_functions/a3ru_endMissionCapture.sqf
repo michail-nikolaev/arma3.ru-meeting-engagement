@@ -9,7 +9,10 @@
 // If you want to make for example vehicle defence mission you can use something like that:
 // [getPos myVehicle, 25, EAST, 5, "Vehicle defenders failed"] spawn fnc_a3ru_endMissionCountUnits;
 
-private ["_zone", "_area", "_side", "_minMan", "_message", "_zonePos", "_vehCount", "_man", "_veh", "_manCount"];
+private ["_BFSide", "_OFSide", "_zone", "_area", "_side", "_minMan", "_message", "_zonePos", "_vehCount", "_man", "_veh", "_manCount"];
+
+_BFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "blueforSide"));
+_OFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "opforSide"));
 
 _zone = _this select 0;
 _area = _this select 1; 
@@ -57,13 +60,13 @@ while {true} do {
 	_man = [];
 	{ if ((getPosASL _x) select 2 > -1) then { _man SET [count _man, _x] } } forEach (_zonePos nearEntities [["Man"], _area]);
 	_veh = _zonePos nearEntities [["LandVehicle"], _area];
-	_manWestCount = west countSide _man;
-	_manEastCount = east countSide _man;
+	_manWestCount = _BFSide countSide _man;
+	_manEastCount = _OFSide countSide _man;
 	{
-		if (side _x == west) then {
+		if (side _x == _BFSide) then {
 			_vehWestCount = _vehWestCount + (count (crew _x));
 		};
-		if (side _x == east) then {
+		if (side _x == _OFSide) then {
 			_vehEastCount = _vehEastCount + (count (crew _x));
 		};
 	} forEach _veh;
@@ -86,7 +89,7 @@ while {true} do {
 						_controlProgress = _controlProgress + round(_timeWasted / _capTimeBlock);
 						if (_controlProgress > 9) then {
 							_holdSide = 1;
-							[format["BLUEFOR captured %1", _area_name], 2] call fnc_a3ru_message;
+							[format["%1 captured %2", _BFSide, _area_name], 2] call fnc_a3ru_message;
 							_holdStart = diag_tickTime;
 							[0, 10, _zonePos, _area] call fnc_a3ru_pub_pb;
 						} else {
@@ -96,7 +99,7 @@ while {true} do {
 						_controlProgress = _controlProgress - round(_timeWasted / _capTimeBlock);
 						if (_controlProgress < 1) then {
 							if (_controlSide != 0) then {
-								[format["BLUEFOR neutralised %1", _area_name], 2] call fnc_a3ru_message;
+								[format["%1 neutralised %2", _BFSide, _area_name], 2] call fnc_a3ru_message;
 							};
 							_controlSide = 1;
 							[0, 0, _zonePos, _area] call fnc_a3ru_pub_pb;
@@ -108,8 +111,9 @@ while {true} do {
 			} else {
 				if (diag_tickTime - _holdStart > _holdTime) exitWith {
 					switch (_holdSide) do {
-						case 1: { format["BLUEFOR Defended %1!", _area_name] call fnc_a3ru_endMission };
-						case 2: { format["OPFOR Defended %1!", _area_name] call fnc_a3ru_endMission };
+						//default { format["%1 Defended!", _area_name] call fnc_a3ru_endMission };
+						case 1: { [format["%1 Defended %2!", _BFSide, _area_name], _BFSide] call fnc_a3ru_endMission };
+						case 2: { [format["%1 Defended %2!", _OFSide, _area_name], _OFSide] call fnc_a3ru_endMission };
 					};
 					_exit = true;
 				};
@@ -136,7 +140,7 @@ while {true} do {
 						_controlProgress = _controlProgress + round(_timeWasted / _capTimeBlock);
 						if (_controlProgress > 9) then {
 							_holdSide = 2;
-							[format["OPFOR captured %1", _area_name], 2] call fnc_a3ru_message;
+							[format["%1 captured %2", _OFSide, _area_name], 2] call fnc_a3ru_message;
 							_holdStart = diag_tickTime;
 							[1, 10, _zonePos, _area] call fnc_a3ru_pub_pb;
 						} else {
@@ -146,7 +150,7 @@ while {true} do {
 						_controlProgress = _controlProgress - round(_timeWasted / _capTimeBlock);
 						if (_controlProgress < 1) then {
 							if (_controlSide != 0) then {
-								[format["OPFOR neutralised %1", _area_name], 2] call fnc_a3ru_message;
+								[format["%1 neutralised %2", _OFSide, _area_name], 2] call fnc_a3ru_message;
 							};
 							_controlSide = 2;
 							[1, 0, _zonePos, _area] call fnc_a3ru_pub_pb;
@@ -158,8 +162,9 @@ while {true} do {
 			} else {
 				if (diag_tickTime - _holdStart > _holdTime) exitWith {
 					switch (_holdSide) do {
-						case 1: { format["BLUEFOR Defended %1!", _area_name] call fnc_a3ru_endMission };
-						case 2: { format["OPFOR Defended %1!", _area_name] call fnc_a3ru_endMission };
+						//default { format["%1 Defended!", _area_name] call fnc_a3ru_endMission };
+						case 1: { [format["%1 Defended %2!", _BFSide, _area_name], _BFSide] call fnc_a3ru_endMission };
+						case 2: { [format["%1 Defended %2!", _OFSide, _area_name], _OFSide] call fnc_a3ru_endMission };
 					};
 					_exit = true;
 				};

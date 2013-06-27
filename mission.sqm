@@ -8,10 +8,10 @@ class Mission
 		"A3_Characters_F_BLUFOR",
 		"a3ru_radio",
 		"A3RU_Items",
-		"A3_Soft_F_Ifrit",
+		"A3_Soft_F_MRAP_02",
 		"A3_Soft_F_Quadbike",
-		"A3_Static_F_Mk6",
-		"a3_soft_f_hunter",
+		"A3_Static_F_Mortar_01",
+		"A3_Soft_F_MRAP_01",
 		"A3_Weapons_F_Ammoboxes",
 		"a3ru_mortar_fix",
 		"A3_Structures_F_Mil_TentHangar",
@@ -31,21 +31,25 @@ class Mission
 		"A3_Structures_F_Mil_Fortification",
 		"A3_Structures_F_Ind_AirPort",
 		"A3_Structures_F_Walls",
-		"A3_Boat_F_Speedboat",
-		"A3_Boat_F_Assault_Boat",
+		"A3_Boat_F_Boat_Transport_01",
+		"A3_Boat_F_Boat_Armed_01",
 		"a3_weapons_f_longrangerifles_gm6",
-		"a3_weapons_f_longrangerifles_m320"
+		"a3_weapons_f_longrangerifles_m320",
+		"a3_characters_f_beta",
+		"a3_weapons_f_beta_ammoboxes"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_BLUFOR",
-		"A3_Soft_F_Ifrit",
+		"a3_characters_f_beta",
+		"A3_Soft_F_MRAP_02",
 		"A3_Soft_F_Quadbike",
-		"A3_Static_F_Mk6",
+		"A3_Static_F_Mortar_01",
 		"a3ru_mortar_fix",
-		"A3_Soft_F_Hunter",
+		"A3_Soft_F_MRAP_01",
 		"A3_Weapons_F_Ammoboxes",
+		"a3_weapons_f_beta_ammoboxes",
 		"A3_Structures_F_Mil_TentHangar",
 		"A3_Structures_F_Mil_Barracks",
 		"A3_Structures_F_Mil_Offices",
@@ -63,8 +67,8 @@ class Mission
 		"A3_Structures_F_Mil_Fortification",
 		"A3_Structures_F_Ind_AirPort",
 		"A3_Structures_F_Walls",
-		"A3_Boat_F_Speedboat",
-		"A3_Boat_F_Assault_Boat",
+		"A3_Boat_F_Boat_Armed_01",
+		"A3_Boat_F_Boat_Transport_01",
 		"a3_map_stratis"
 	};
 	randomSeed=7531956;
@@ -144,7 +148,7 @@ class Mission
 					id=2;
 					side="EAST";
 					vehicle="O_diver_TL_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""D_TL""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
@@ -300,7 +304,7 @@ class Mission
 				class Item0
 				{
 					position[]={3642.6245,10.451006,7413.3145};
-					azimut=-321.87296;
+					azimut=-321.87299;
 					special="NONE";
 					id=13;
 					side="EAST";
@@ -371,7 +375,7 @@ class Mission
 					id=18;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					init="[this, ""OPFOR"", ""SPN_AT""] call compile preprocessFileLineNumbers ""a3ru_scripts\a3ru_unitInit.sqf"";";
 					description="Spesnaz AT";
@@ -1978,7 +1982,7 @@ class Mission
 			azimut=-63.419983;
 			id=130;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""SAP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -1988,7 +1992,7 @@ class Mission
 			azimut=-60.161995;
 			id=131;
 			side="EMPTY";
-			vehicle="O_Ifrit_MG_F";
+			vehicle="O_MRAP_02_hmg_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -1998,7 +2002,7 @@ class Mission
 			azimut=12.705635;
 			id=132;
 			side="EMPTY";
-			vehicle="O_Quadbike_F";
+			vehicle="O_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2008,7 +2012,7 @@ class Mission
 			azimut=54.591003;
 			id=133;
 			side="EMPTY";
-			vehicle="O_Quadbike_F";
+			vehicle="O_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2018,7 +2022,7 @@ class Mission
 			azimut=-66.022942;
 			id=134;
 			side="EMPTY";
-			vehicle="O_Ifrit_GMG_F";
+			vehicle="O_MRAP_02_gmg_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2027,7 +2031,7 @@ class Mission
 			position[]={3595.1428,5.978653,7454.5649};
 			id=135;
 			side="EMPTY";
-			vehicle="O_Mk6";
+			vehicle="O_Mortar_01_F";
 			skill=0.60000002;
 			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
 		};
@@ -2037,7 +2041,7 @@ class Mission
 			azimut=-64.822891;
 			id=136;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""MED""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2047,7 +2051,7 @@ class Mission
 			azimut=-69.0504;
 			id=137;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""AT""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2058,7 +2062,7 @@ class Mission
 			special="NONE";
 			id=138;
 			side="EMPTY";
-			vehicle="B_Hunter_RCWS_F";
+			vehicle="B_MRAP_01_gmg_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -2071,7 +2075,7 @@ class Mission
 			special="NONE";
 			id=139;
 			side="EMPTY";
-			vehicle="B_Hunter_RCWS_F";
+			vehicle="B_MRAP_01_gmg_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -2084,7 +2088,7 @@ class Mission
 			special="NONE";
 			id=140;
 			side="EMPTY";
-			vehicle="B_Quadbike_F";
+			vehicle="B_Quadbike_01_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -2096,7 +2100,7 @@ class Mission
 			azimut=-296.81799;
 			id=141;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""SUP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2106,7 +2110,7 @@ class Mission
 			azimut=389.15103;
 			id=142;
 			side="EMPTY";
-			vehicle="B_Quadbike_F";
+			vehicle="B_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2116,7 +2120,7 @@ class Mission
 			azimut=54.121899;
 			id=143;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2126,7 +2130,7 @@ class Mission
 			azimut=-302.64349;
 			id=144;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""MED""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -2136,7 +2140,7 @@ class Mission
 			azimut=-24.5193;
 			id=145;
 			side="EMPTY";
-			vehicle="B_Mk6";
+			vehicle="B_Mortar_01_F";
 			skill=0.60000002;
 			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
 		};
@@ -2983,7 +2987,7 @@ class Mission
 			azimut=254.099;
 			id=232;
 			side="EMPTY";
-			vehicle="B_SpeedBoat";
+			vehicle="B_Boat_Armed_01_minigun_F";
 			skill=0.60000002;
 			ammo=0.17239529;
 			init="[this, ""BLUEFOR"", ""SAP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -2994,7 +2998,7 @@ class Mission
 			azimut=236.32584;
 			id=233;
 			side="EMPTY";
-			vehicle="B_Assaultboat";
+			vehicle="B_Boat_Transport_01_F";
 			skill=0.60000002;
 		};
 		class Item104
@@ -3003,7 +3007,7 @@ class Mission
 			azimut=250.931;
 			id=234;
 			side="EMPTY";
-			vehicle="B_Assaultboat";
+			vehicle="B_Boat_Transport_01_F";
 			skill=0.60000002;
 		};
 		class Item105
@@ -3013,7 +3017,7 @@ class Mission
 			special="NONE";
 			id=235;
 			side="EMPTY";
-			vehicle="O_Assaultboat";
+			vehicle="O_Boat_Transport_01_F";
 			leader=1;
 			skill=0.60000002;
 			description="Diver Team Leader";
@@ -3025,7 +3029,7 @@ class Mission
 			special="NONE";
 			id=236;
 			side="EMPTY";
-			vehicle="O_Assaultboat";
+			vehicle="O_Boat_Transport_01_F";
 			leader=1;
 			skill=0.60000002;
 			description="Diver Team Leader";
@@ -3037,7 +3041,7 @@ class Mission
 			special="NONE";
 			id=237;
 			side="EMPTY";
-			vehicle="O_SpeedBoat";
+			vehicle="O_Boat_Armed_01_hmg_F";
 			leader=1;
 			skill=0.60000002;
 			ammo=0.17781454;
@@ -3051,7 +3055,7 @@ class Mission
 			azimut=-64.822899;
 			id=238;
 			side="EMPTY";
-			vehicle="O_Ifrit_MG_F";
+			vehicle="O_MRAP_02_hmg_F";
 			skill=0.60000002;
 			health=0.71432763;
 			ammo=0.84439141;
@@ -3065,7 +3069,7 @@ class Mission
 			azimut=-64.822899;
 			id=239;
 			side="EMPTY";
-			vehicle="B_Hunter_HMG_F";
+			vehicle="B_MRAP_01_hmg_F";
 			skill=0.60000002;
 			health=0.71432763;
 			ammo=0.84439141;
@@ -3078,7 +3082,7 @@ class Mission
 			azimut=12.7056;
 			id=240;
 			side="EMPTY";
-			vehicle="O_Quadbike_F";
+			vehicle="O_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3088,7 +3092,7 @@ class Mission
 			azimut=-86.392601;
 			id=241;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""SUP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3098,7 +3102,7 @@ class Mission
 			azimut=-86.120819;
 			id=242;
 			side="EMPTY";
-			vehicle="O_Ifrit_MG_F";
+			vehicle="O_MRAP_02_hmg_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3108,7 +3112,7 @@ class Mission
 			azimut=-84.20742;
 			id=243;
 			side="EMPTY";
-			vehicle="O_Ifrit_GMG_F";
+			vehicle="O_MRAP_02_gmg_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3118,7 +3122,7 @@ class Mission
 			azimut=-69.0504;
 			id=244;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3128,7 +3132,7 @@ class Mission
 			azimut=-69.697998;
 			id=245;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""SAP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3138,7 +3142,7 @@ class Mission
 			azimut=-60.161999;
 			id=246;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""SUP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3148,7 +3152,7 @@ class Mission
 			azimut=-66.022903;
 			id=247;
 			side="EMPTY";
-			vehicle="O_Ifrit_F";
+			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3158,7 +3162,7 @@ class Mission
 			azimut=12.705635;
 			id=248;
 			side="EMPTY";
-			vehicle="O_Quadbike_F";
+			vehicle="O_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3168,7 +3172,7 @@ class Mission
 			azimut=54.591003;
 			id=249;
 			side="EMPTY";
-			vehicle="O_Quadbike_F";
+			vehicle="O_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3178,7 +3182,7 @@ class Mission
 			azimut=12.705635;
 			id=250;
 			side="EMPTY";
-			vehicle="O_Quadbike_F";
+			vehicle="O_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3188,7 +3192,7 @@ class Mission
 			azimut=22.370674;
 			id=251;
 			side="EMPTY";
-			vehicle="O_Quadbike_F";
+			vehicle="O_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""OPFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3199,7 +3203,7 @@ class Mission
 			special="NONE";
 			id=252;
 			side="EMPTY";
-			vehicle="B_Hunter_HMG_F";
+			vehicle="B_MRAP_01_hmg_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3212,7 +3216,7 @@ class Mission
 			special="NONE";
 			id=253;
 			side="EMPTY";
-			vehicle="B_Quadbike_F";
+			vehicle="B_Quadbike_01_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3224,7 +3228,7 @@ class Mission
 			azimut=324.07825;
 			id=254;
 			side="EMPTY";
-			vehicle="B_Quadbike_F";
+			vehicle="B_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3235,7 +3239,7 @@ class Mission
 			special="NONE";
 			id=255;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3247,7 +3251,7 @@ class Mission
 			azimut=-296.81799;
 			id=256;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""AT""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3258,7 +3262,7 @@ class Mission
 			special="NONE";
 			id=257;
 			side="EMPTY";
-			vehicle="B_Hunter_HMG_F";
+			vehicle="B_MRAP_01_hmg_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3271,7 +3275,7 @@ class Mission
 			special="NONE";
 			id=258;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""BA""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3283,7 +3287,7 @@ class Mission
 			azimut=-296.81799;
 			id=259;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""SAP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3293,7 +3297,7 @@ class Mission
 			azimut=-301.66522;
 			id=260;
 			side="EMPTY";
-			vehicle="B_Hunter_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""SAP""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3304,7 +3308,7 @@ class Mission
 			special="NONE";
 			id=261;
 			side="EMPTY";
-			vehicle="B_Quadbike_F";
+			vehicle="B_Quadbike_01_F";
 			leader=1;
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
@@ -3316,7 +3320,7 @@ class Mission
 			azimut=324.07825;
 			id=262;
 			side="EMPTY";
-			vehicle="B_Quadbike_F";
+			vehicle="B_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3326,7 +3330,7 @@ class Mission
 			azimut=324.07825;
 			id=263;
 			side="EMPTY";
-			vehicle="B_Quadbike_F";
+			vehicle="B_Quadbike_01_F";
 			skill=0.60000002;
 			init="[this, ""BLUEFOR"", ""EMPTY""] call compile preprocessFileLineNumbers ""a3ru_equipment\init_vehicle.sqf"";";
 		};
@@ -3335,7 +3339,7 @@ class Mission
 			position[]={3592.7476,5.8761048,7455.5469};
 			id=264;
 			side="EMPTY";
-			vehicle="O_Mk6";
+			vehicle="O_Mortar_01_F";
 			skill=0.60000002;
 			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
 		};
@@ -3345,7 +3349,7 @@ class Mission
 			azimut=-24.5193;
 			id=265;
 			side="EMPTY";
-			vehicle="B_Mk6";
+			vehicle="B_Mortar_01_F";
 			skill=0.60000002;
 			init="this addMagazine""8Rnd_82mm_Mo_shells""; ";
 		};

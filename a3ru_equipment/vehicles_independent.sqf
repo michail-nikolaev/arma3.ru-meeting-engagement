@@ -13,18 +13,16 @@ switch toLower(_template) do {
 	};
 	case "empty": {}; // Empty cargo
 	case "mini": { // Minimum ammo
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 10];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 5];
+		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 15];
 		_veh addMagazineCargoGlobal ["HandGrenade", 5];
 		_veh addMagazineCargoGlobal ["SmokeShell", 2];
 	};
 	case "ba": { // Basic Ammo
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 10];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 5];
+		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 15];
 		_veh addMagazineCargoGlobal ["20Rnd_556x45_UW_mag", 5];
+		_veh addMagazineCargoGlobal ["30Rnd_9x21_Mag", 5];
 		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 10];
 		_veh addMagazineCargoGlobal ["20Rnd_762x51_Mag", 5];
-		_veh addMagazineCargoGlobal ["30Rnd_9x21_Mag", 5];
 		_veh addMagazineCargoGlobal ["HandGrenade", 5];
 		_veh addMagazineCargoGlobal ["SmokeShell", 2];
 		_veh addMagazineCargoGlobal ["SmokeShellBlue", 2];
@@ -35,16 +33,14 @@ switch toLower(_template) do {
 	};
 	case "at": { // AT Ammo
 		_veh addMagazineCargoGlobal ["RPG32_F", 2];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 10];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 2];
+		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 12];
 		_veh addMagazineCargoGlobal ["HandGrenade", 5];
 		_veh addMagazineCargoGlobal ["SmokeShell", 2];
 
 	};
 	case "aa": { // AA Ammo
 		_veh addMagazineCargoGlobal ["RPG32_AA_F", 2];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 10];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 2];
+		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 12];
 		_veh addMagazineCargoGlobal ["HandGrenade", 5];
 		_veh addMagazineCargoGlobal ["SmokeShell", 2];
 	};
@@ -75,8 +71,7 @@ switch toLower(_template) do {
 		_veh addMagazineCargoGlobal ["ATMine_Range_Mag", 2];
 	};
 	case "med": { // Medical equipment
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green", 10];
-		_veh addMagazineCargoGlobal ["30Rnd_65x39_caseless_green_mag_Tracer", 2];
+		_veh addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 12];
 		_veh addWeaponCargoGlobal ["FirstAidKit", 10];
 		_veh addWeaponCargoGlobal ["Medikit", 2];
 	};

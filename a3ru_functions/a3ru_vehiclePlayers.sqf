@@ -5,6 +5,7 @@
 #define a3ru_color_blue "#0000ff"
 #define a3ru_color_red "#ff0000"
 #define a3ru_color_white "#ffffff"
+#define a3ru_color_green "#12be00"
 
 // Show players in vehicle
 _vehicle = vehicle player;
@@ -15,6 +16,7 @@ if (player != _vehicle) then {
 	switch (_vehSide) do {
 		case "BLU_F": { _color = a3ru_color_blue };
 		case "OPF_F": { _color = a3ru_color_red };
+		case "IND_F": { _color = a3ru_color_green };
 	};
 	_output = format["<t size='1.2' color='%1'> %2 </t><br/><t align='left'>", _color, _vehName];
 	{

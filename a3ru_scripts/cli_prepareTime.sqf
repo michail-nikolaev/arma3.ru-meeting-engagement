@@ -14,6 +14,7 @@ fnc_a3ru_vehMark = {
 				switch (side player) do {
 					case WEST: { _array = a3ru_markersVehiclesArray select 0 };
 					case EAST: { _array = a3ru_markersVehiclesArray select 1 };
+					case INDEPENDENT: { _array = a3ru_markersVehiclesArray select 2 };
 				};
 				{
 					_marker = str(_x select 1);
@@ -45,6 +46,7 @@ fnc_a3ru_markGroups = {
 				switch (side player) do {
 					case WEST: { _array = a3ru_markersArray select 0 };
 					case EAST: { _array = a3ru_markersArray select 1 };
+					case INDEPENDENT: { _array = a3ru_markersArray select 2 };
 				};
 				{
 					_marker = str(_x select 1);
