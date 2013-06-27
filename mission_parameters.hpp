@@ -5,7 +5,7 @@ prepareZoneSize = 300;
 prepareVehicleFreeze[] = {"BLU_F", "OPF_F", "IND_F", "IND_G_F", "CIV_F"};
 
 // Противоборствующие стороны ("WEST", "EAST", "INDEPENDENT")
-blueforSide = "WEST";
+blueforSide = "INDEPENDENT";
 opforSide =  "EAST";
 sideSupremacy = 5; // Завершение по превосходству одной стороны над другой
 BFLoss = 15; // Завершение по проценту потерь стороны BLUEFOR
