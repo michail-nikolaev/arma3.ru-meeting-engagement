@@ -229,12 +229,12 @@ switch toUpper(_this) do {
 		_e_back = ["a3ru_radio_r168", "B_AssaultPack_dgtl", "B_AssaultPack_cbr", "B_AssaultPack_khk", "B_AssaultPack_ocamo", "B_AssaultPack_rgr"];
 	};
 	case "SPN_AT": { // Spes AT
-		_e_prim = ["SMG_02_F"];
+		_e_prim = ["arifle_Katiba_C_F"];
 		_e_prim_mag = [
-			[["30Rnd_9x21_Mag", 8], ["HandGrenade", 4], ["SmokeShell", 4]]
+			[["30Rnd_65x39_caseless_green", 8], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
-		_e_mod1 = ["muzzle_snds_L"];
-		_e_mod2 = ["acc_pointer_IR"];
+		_e_mod1 = ["muzzle_snds_H"];
+		_e_mod2 = ["acc_pointer_IR", "acc_flashlight"];
 		_e_mod3 = ["optic_ACO_grn"];
 		_e_sec = ["launch_Titan_short_F"];
 		_e_sec_mag = [[["Titan_AT", 1]]];
@@ -243,6 +243,21 @@ switch toUpper(_this) do {
 		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
 		_e_back = ["B_AssaultPack_dgtl"];
 	};
+	case "SPN_SC": { // Spes Scout
+		_e_prim = ["arifle_Katiba_C_F"];
+		_e_prim_mag = [
+			[["30Rnd_65x39_caseless_green", 10], ["30Rnd_65x39_caseless_green_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2], ["DemoCharge_Remote_Mag", 1]]
+		];
+		_e_mod1 = ["muzzle_snds_H"];
+		_e_mod2 = ["acc_pointer_IR", "acc_flashlight"];
+		_e_mod3 = ["optic_ACO_grn"];
+		_e_sec = [];
+		_e_sec_mag = [];
+		_e_side = ["hgun_P07_snds_F"];
+		_e_side_mag = [[["16Rnd_9x21_Mag", 3]]];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
+		_e_back = ["B_TacticalPack_ocamo"];
+	};
 	case "SPN_SN": { // Spes Sniper
 		_e_prim = ["srifle_EBR_F"];
 		_e_prim_mag = [
@@ -250,7 +265,7 @@ switch toUpper(_this) do {
 		];
 		_e_mod1 = ["muzzle_snds_B"];
 		_e_mod2 = ["acc_pointer_IR"];
-		_e_mod3 = ["optic_ARCO"];
+		_e_mod3 = ["optic_SOS", "optic_ARCO"];
 		_e_sec = [];
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
@@ -259,13 +274,13 @@ switch toUpper(_this) do {
 		_e_back = [];
 	};
 	case "SPN_ES": { // Spes Explosive Specialist
-		_e_prim = ["SMG_02_F"];
+		_e_prim = ["arifle_Katiba_F"];
 		_e_prim_mag = [
-			[["30Rnd_9x21_Mag", 8], ["HandGrenade", 4], ["SmokeShell", 4], ["SatchelCharge_Remote_Mag", 2]]
+			[["30Rnd_65x39_caseless_green", 6],["30Rnd_65x39_caseless_green_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2], ["SatchelCharge_Remote_Mag", 2]]
 		];
-		_e_mod1 = ["muzzle_snds_L"];
+		_e_mod1 = ["muzzle_snds_H"];
 		_e_mod2 = ["acc_pointer_IR"];
-		_e_mod3 = ["optic_ACO_grn"];
+		_e_mod3 = ["optic_ARCO", "optic_ACO_grn"];
 		_e_sec = [];
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
@@ -273,14 +288,29 @@ switch toUpper(_this) do {
 		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
 		_e_back = ["B_AssaultPack_dgtl", "B_AssaultPack_cbr", "B_AssaultPack_khk", "B_AssaultPack_ocamo", "B_AssaultPack_rgr"];
 	};
+	case "SPN_AR": { // Spes Autorifleman
+		_e_prim = ["LMG_Mk200_F"];
+		_e_prim_mag = [
+			[["200Rnd_65x39_cased_Box", 4], ["200Rnd_65x39_cased_Box_Tracer", 1], ["HandGrenade", 4], ["SmokeShell", 4]]
+		];
+		_e_mod1 = ["muzzle_snds_H_MG"];
+		_e_mod2 = ["acc_pointer_IR", "acc_flashlight"];
+		_e_mod3 = ["optic_ARCO", "optic_Holosight", "optic_ACO_grn"];
+		_e_sec = [];
+		_e_sec_mag = [];
+		_e_side = ["hgun_P07_snds_F"];
+		_e_side_mag = [[["16Rnd_9x21_Mag", 3]]];
+		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Binocular", "FirstAidKit"];
+		_e_back = ["B_TacticalPack_ocamo"];
+	};
 	case "SPN_MED": { // Spes Medic
 		_e_prim = ["arifle_Katiba_F"];
 		_e_prim_mag = [
 			[["30Rnd_65x39_caseless_green", 6],["30Rnd_65x39_caseless_green_mag_Tracer", 2], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
-		_e_mod1 = [];
+		_e_mod1 = ["muzzle_snds_H"];
 		_e_mod2 = ["acc_pointer_IR"];
-		_e_mod3 = ["optic_ARCO", "optic_ACO_grn"];
+		_e_mod3 = ["optic_ACO_grn"];
 		_e_sec = [];
 		_e_sec_mag = [];
 		_e_side = ["hgun_P07_snds_F"];
@@ -304,9 +334,9 @@ switch toUpper(_this) do {
 		_e_back = [];
 	};
 	case "SPOTTER": { // Spotter
-		_e_prim = ["SMG_02_F"];
+		_e_prim = ["SMG_01_F"];
 		_e_prim_mag = [
-			[["30Rnd_9x21_Mag", 8], ["HandGrenade", 2], ["SmokeShell", 2]]
+			[["30Rnd_45ACP_Mag_SMG_01", 8], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
 		_e_mod1 = [];
 		_e_mod2 = [];
@@ -318,6 +348,37 @@ switch toUpper(_this) do {
 		_e_items = ["ItemCompass", "ItemTCubeMT", "ItemMap", "ItemWatch", "NVGoggles", "Rangefinder", ["FirstAidKit", 2]];
 		_e_back = ["a3ru_radio_r168"];
 	};
+	case "CREW": { // Crewman
+		_e_prim = ["SMG_01_F"];
+		_e_prim_mag = [
+			[["30Rnd_45ACP_Mag_SMG_01", 4], ["HandGrenade", 2], ["SmokeShell", 2]]
+		];
+		_e_mod1 = [];
+		_e_mod2 = [];
+		_e_mod3 = [];
+		_e_sec = [];
+		_e_sec_mag = [];
+		_e_side = [];
+		_e_side_mag = [];
+		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "FirstAidKit"];
+		_e_back = [];
+	};
+	case "PILOT": { // Crewman
+		_e_prim = ["SMG_01_F"];
+		_e_prim_mag = [
+			[["30Rnd_45ACP_Mag_SMG_01", 4], ["HandGrenade", 2], ["SmokeShell", 2]]
+		];
+		_e_mod1 = [];
+		_e_mod2 = [];
+		_e_mod3 = [];
+		_e_sec = [];
+		_e_sec_mag = [];
+		_e_side = [];
+		_e_side_mag = [];
+		_e_items = ["ItemCompass", "ItemGPS", "ItemMap", "ItemWatch", "NVGoggles", "FirstAidKit"];
+		_e_back = ["a3ru_radio_r168"];
+	};
+
 };
 
 if (_wrong) then {
