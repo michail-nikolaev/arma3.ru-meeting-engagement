@@ -205,6 +205,12 @@ fnc_a3ru_weap_equip = {
 					case "rangefinder": {
 						_unit addWeapon _item;
 					};
+					case "toolkit": {
+						_unit addItem _item;
+					};
+					case "minedetector": {
+						_unit addWeapon _item;
+					};
 				};
 			};
 		} else {
@@ -232,6 +238,12 @@ fnc_a3ru_weap_equip = {
 					_unit addWeapon _x;
 				};
 				case "rangefinder": {
+					_unit addWeapon _x;
+				};
+				case "toolkit": {
+					_unit addItem _x;
+				};
+				case "minedetector": {
 					_unit addWeapon _x;
 				};
 			};
@@ -361,15 +373,15 @@ while {!a3ru_weapon_closeCode} do {
 // Primary Weapons
 
 /////////////// OPFOR ///////////////
-// arifle_Khaybar_C_F - Katiba 6.5 mm Carbine
+// arifle_Katiba_C_F - Katiba 6.5 mm Carbine
 // 30Rnd_65x39_caseless_green, 30Rnd_65x39_caseless_green_mag_Tracer
 // [["muzzle_snds_H"],["acc_flashlight", "acc_pointer_IR"],["optic_ACO", "optic_ACO_grn", "optic_Hamr", "optic_Holosight", "optic_ARCO"]]
 // 
-// arifle_Khaybar_F - Katiba 6.5 mm
+// arifle_Katiba_F - Katiba 6.5 mm
 // [["muzzle_snds_H"],["acc_flashlight", "acc_pointer_IR"],["optic_ACO", "optic_ACO_grn", "optic_Hamr", "optic_Holosight", "optic_ARCO"]]
 // 30Rnd_65x39_caseless_green, 30Rnd_65x39_caseless_green_mag_Tracer
 //
-// arifle_Khaybar_GL_F - Katiba 6.5 mm GL
+// arifle_Katiba_GL_F - Katiba 6.5 mm GL
 // [["muzzle_snds_H"],["acc_flashlight", "acc_pointer_IR"],["optic_ACO", "optic_ACO_grn", "optic_Hamr", "optic_Holosight", "optic_ARCO"]]
 // 1Rnd_HE_Grenade_shell,
 // 1Rnd_Smoke_Grenade_shell, 1Rnd_SmokeBlue_Grenade_shell, 1Rnd_SmokeGreen_Grenade_shell, 1Rnd_SmokeOrange_Grenade_shell, 1Rnd_SmokePurple_Grenade_shell, 1Rnd_SmokeRed_Grenade_shell, 1Rnd_SmokeYellow_Grenade_shell,

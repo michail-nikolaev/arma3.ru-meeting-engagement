@@ -91,7 +91,7 @@ class Mission
 	randomSeed=7531956;
 	class Intel
 	{
-		briefingName="A3RU 176 Meeting Engagement (v0.7/0.92)";
+		briefingName="A3RU 176 Meeting Engagement (v0.8/0.921)";
 		overviewText="Красные (нападение|защита]) - Зеленые (нападение|защита";
 		resistanceWest=0;
 		timeOfChanges=7200;
