@@ -67,7 +67,7 @@ switch toUpper(_this) do {
 		_e_prim_mag = [
 			[["30Rnd_556x45_Stanag", 12], ["1Rnd_HE_Grenade_shell", 8], ["HandGrenade", 2], ["SmokeShell", 2]]
 		];
-		_e_mod1 = ["muzzle_snds_M"];
+		_e_mod1 = [];
 		_e_mod2 = ["acc_flashlight", "acc_pointer_IR"];
 		_e_mod3 = ["optic_ACO_grn", "optic_ACO"];
 		_e_sec = [];
