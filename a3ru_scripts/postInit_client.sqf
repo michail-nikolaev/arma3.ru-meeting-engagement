@@ -1,8 +1,14 @@
 enableRadio false;
 enableSentences false;
 
-waitUntil {!isNil "a3ru_started" && (isNull (findDisplay 101) || !(alive player))}; // Wait for init
+waitUntil {!isNil "a3ru_started" && (!isNull (findDisplay 46) || !(alive player))}; // Wait for init
+
 titleText ["", "BLACK IN"];
+
+// Slot reservation check
+if (!isNull player && (a3ru_slotReservation == 0)) then {
+	[] execVM "a3ru_scripts\cli_slotReservation.sqf";
+};
 
 _sg = getNumber (MissionConfigFile >> "A3RU_MissionParams" >> "sundayGames");
 if (_sg == 1 && !(a3ru_started) && !(isServer)) then {

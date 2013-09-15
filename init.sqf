@@ -1,6 +1,8 @@
 // ARMA3.RU Mission Template
 enableSaving [false, false];
-titleText ["Loading...", "BLACK"];
+//titleText ["Loading...", "BLACK"];
+
+if (!isDedicated) then { waitUntil {player == player} };
 
 // PreInit
 if (isClass(configFile >> "A3RU_PreInit_EventHandlers")) then	{
@@ -86,13 +88,7 @@ fnc_a3ru_endMission = compile preprocessFileLineNumbers "a3ru_functions\a3ru_end
 _script = [] execVM "a3ru_scripts\setMissionParams.sqf";
 waitUntil { scriptDone _script };
 
-if (isServer) then {
-	{_x setdamage 1} foreach nearestObjects [bang1, [], 400];
-	{_x setdamage 1} foreach nearestObjects [bang2, [], 400];
-	{_x setdamage 1} foreach nearestObjects [bang3, [], 50];
-	{_x setdamage 1} foreach nearestObjects [bang4, [], 50];
-};
-
+if (isServer) then { if (a3ru_slotReservation == 0) then { _script = [] execVM "a3ru_scripts\srv_slotReservation.sqf" } };
 
 // PostInit
 waitUntil {time > 0};
@@ -125,6 +121,5 @@ if (isServer) then {
 
 // Client
 if (!isDedicated) then {
-	waitUntil {player == player};
 	[] execVM "a3ru_scripts\postInit_client.sqf";
 };

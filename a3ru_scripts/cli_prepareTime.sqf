@@ -1,6 +1,7 @@
 if (isNil "a3ru_started") then {
 	a3ru_started = false;
 };
+diag_log "cli_pt INITIALIZED";
 
 fnc_a3ru_vehMark = {
 	private ["_array", "_marker", "_name"];
@@ -16,16 +17,18 @@ fnc_a3ru_vehMark = {
 					case EAST: { _array = a3ru_markersVehiclesArray select 1 };
 					case INDEPENDENT: { _array = a3ru_markersVehiclesArray select 2 };
 				};
-				{
-					_marker = str(_x select 1);
-					createMarkerLocal[_marker, _x select 0];
-					_marker setMarkerShapeLocal "ICON";
-					_marker setMarkerTypeLocal "mil_dot";
-					_name = getText (configFile >> "CfgVehicles" >> (typeOf (_x select 1)) >> "displayName");
-					_marker setMarkerTextLocal _name;
-					_marker setMarkerColorLocal "ColorYellow";
-					a3ru_brief_vehArray SET [count a3ru_brief_vehArray, _marker];
-				} forEach _array;
+				if (!isNil "_array") then {
+					{
+						_marker = str(_x select 1);
+						createMarkerLocal[_marker, _x select 0];
+						_marker setMarkerShapeLocal "ICON";
+						_marker setMarkerTypeLocal "mil_dot";
+						_name = getText (configFile >> "CfgVehicles" >> (typeOf (_x select 1)) >> "displayName");
+						_marker setMarkerTextLocal _name;
+						_marker setMarkerColorLocal "ColorYellow";
+						a3ru_brief_vehArray SET [count a3ru_brief_vehArray, _marker];
+					} forEach _array;
+				};
 			};
 		} else {
 			{ deleteMarkerLocal _x } forEach a3ru_brief_vehArray;
@@ -48,15 +51,17 @@ fnc_a3ru_markGroups = {
 					case EAST: { _array = a3ru_markersArray select 1 };
 					case INDEPENDENT: { _array = a3ru_markersArray select 2 };
 				};
-				{
-					_marker = str(_x select 1);
-					createMarkerLocal[_marker, _x select 0];
-					_marker setMarkerShapeLocal "ICON";
-					_marker setMarkerTypeLocal "mil_dot";
-					_marker setMarkerTextLocal _marker;
-					_marker setMarkerColorLocal "ColorOrange";
-					a3ru_briefGroupsArray SET [count a3ru_briefGroupsArray, _marker];
-				} forEach _array;
+				if (!isNil "_array") then {
+					{
+						_marker = str(_x select 1);
+						createMarkerLocal[_marker, _x select 0];
+						_marker setMarkerShapeLocal "ICON";
+						_marker setMarkerTypeLocal "mil_dot";
+						_marker setMarkerTextLocal _marker;
+						_marker setMarkerColorLocal "ColorOrange";
+						a3ru_briefGroupsArray SET [count a3ru_briefGroupsArray, _marker];
+					} forEach _array;
+				};
 			};
 		} else {
 			{ deleteMarkerLocal _x } forEach a3ru_briefGroupsArray;
@@ -64,8 +69,9 @@ fnc_a3ru_markGroups = {
 		};
 	};
 };
-
+diag_log format["a3ru_started: %1", a3ru_started];
 if !(a3ru_started) then {
+	diag_log "!a3RUSTARTED";
 	_firedEHIndex = player addEventHandler ["fired", {deleteVehicle (_this select 6)}];
 	_startPos = player getVariable ["StartPos", nil];
 	if (isNil "_startPos") then {

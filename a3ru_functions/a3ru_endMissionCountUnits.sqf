@@ -15,7 +15,7 @@ _BFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "b
 _OFSide = call compile (getText (MissionConfigFile >> "A3RU_MissionParams" >> "opforSide"));
 
 _zone = _this select 0;
-_area = _this select 1; 
+_area = _this select 1;
 _side = _this select 2;
 _minMan = _this select 3;
 _message = _this select 4;

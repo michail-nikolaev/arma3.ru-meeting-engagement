@@ -28,7 +28,7 @@ if (isDedicated) then {
 				case WEST: {
 					_westGroups SET [count _westGroups, [_pos, _group]];
 					_vehicles = _pos nearEntities [["LandVehicle", "Air", "Ship"], _zoneSize];
-					for "_i" from 0 to (count _vehicles) do {
+					for "_i" from 0 to ((count _vehicles) - 1) do {
 						_veh = _vehicles select _i;
 						if !(_veh in _westVehicles) then {
 							_vehPos = getPos _veh;
@@ -39,7 +39,7 @@ if (isDedicated) then {
 				case EAST: {
 					_eastGroups SET [count _eastGroups, [_pos, _group]];
 					_vehicles = _pos nearEntities [["LandVehicle", "Air", "Ship"], _zoneSize];
-					for "_i" from 0 to (count _vehicles) do {
+					for "_i" from 0 to ((count _vehicles) - 1) do {
 						_veh = _vehicles select _i;
 						if !(_veh in _eastVehicles) then {
 							_vehPos = getPos _veh;
@@ -50,7 +50,7 @@ if (isDedicated) then {
 				case INDEPENDENT: {
 					_guerGroups SET [count _guerGroups, [_pos, _group]];
 					_vehicles = _pos nearEntities [["LandVehicle", "Air", "Ship"], _zoneSize];
-					for "_i" from 0 to (count _vehicles) do {
+					for "_i" from 0 to ((count _vehicles) - 1) do {
 						_veh = _vehicles select _i;
 						if !(_veh in _guerVehicles) then {
 							_vehPos = getPos _veh;

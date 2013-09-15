@@ -5,7 +5,7 @@
 			<!-- Информация о миссии (На английской раскладке) -->
 			<Key ID="STR_A3RU_MissionAuthor">
 				<Original>
-				Nkey
+				[TF]Nkey
 				</Original>
 			</Key> 
 			<Key ID="STR_A3RU_MissionName">
@@ -20,10 +20,7 @@
 			</Key>
 			<Key ID="STR_A3RU_MissionIntel">
 				<Original>
-Уже год, как действует соглашение о прекращении огня, подписанное под давлением Совбеза ООН после обнародования данных о мирных жертвах и разрушениях в 
-&lt;marker name="bang1_marker"&gt;Agia Marine&lt;/marker&gt;
-и &lt;marker name="bang2_marker"&gt;прилегающих территориях&lt;/marker&gt;
-.&lt;br/&gt;
+Уже год, как действует соглашение о прекращении огня, подписанное под давлением Совбеза ООН.
 На протяжение этого года противник неоднократно прибегал к различного рода провокациям, но сегодня
 они перешли все рамки дозволенного. &lt;br/&gt;
 				</Original>
@@ -32,15 +29,15 @@
 			<!-- Описание задач для BLUEFOR (WEST) -->
 			<Key ID="STR_A3RU_BF_MissionTasks">
 				<Original>
-Наш БТР попал под обстрел в
+Наш IFV-6a Гепард попал под обстрел в
 &lt;marker name="car_position"&gt;указанном&lt;/marker&gt; радиусе, его команда не отвечает. Ранее в этом же секторе
 были замечены силы противника. Нет никаких сомнений, что это их рук дело.&lt;br/&gt;
 
 Нам ничего не остается делать, кроме как вынудить противника покинуть остров.&lt;br/&gt;
-Основной задачей будет захват новой &lt;marker name="red_base_border"&gt;базы противника&lt;/marker&gt;.&lt;br/&gt;
+Основной задачей будет захват &lt;marker name="red_base_border"&gt;базы противника&lt;/marker&gt;.&lt;br/&gt;
 По данным разведки противник также планирует нападение - нам потребуется огранизовать оборону &lt;marker name="blue_base_border"&gt;собственной базы&lt;/marker&gt;.&lt;br/&gt;
 Желательно найти утерянный
-&lt;marker name="car_position"&gt;БТР&lt;/marker&gt;,
+&lt;marker name="car_position"&gt;IFV-6a Гепард&lt;/marker&gt;,
 он оборудован тепловизором, который может пригодиться в ходе операции.
 				</Original>
 			</Key>
@@ -51,24 +48,22 @@
 			</Key>
 			<Key ID="STR_A3RU_BF_MissionAdditional">
 				<Original>
-Боевой запас катера уменьшен.&lt;br/&gt;
 Команда миномета имеет ДВ в ящике.&lt;br/&gt;
 Спецназ, тимлидеры и снайпера имеют Fireteam HUD.&lt;br/&gt;
-БТР где-то в рамках красного круга.&lt;br/&gt;
+IFV-6a Гепард где-то в рамках синего круга.&lt;br/&gt;
 В вертолете парашуты.&lt;br/&gt;
-Спасибо Dren's Editor.&lt;br/&gt;
 				</Original>
 			</Key>
 			
 			<!-- Описание задач для OPFOR (EAST) -->
 			<Key ID="STR_A3RU_OF_MissionTasks">
 				<Original>
-Противник, планирует атаку на нашу базу, заявляя о том, что якобы наши силы атаковали их БТР.&lt;br/&gt;
+Противник, планирует атаку на нашу базу, заявляя о том, что якобы наши силы атаковали их IFV-6a Гепард.&lt;br/&gt;
 Нам ничего не остается делать, кроме как вынудить противника покинуть остров.&lt;br/&gt;
-Основной задачей будет захват новой &lt;marker name="blue_base_border"&gt;базы противника&lt;/marker&gt;.&lt;br/&gt;
+Основной задачей будет захват &lt;marker name="blue_base_border"&gt;базы противника&lt;/marker&gt;.&lt;br/&gt;
 Также нам потребуется огранизовать оборону &lt;marker name="red_base_border"&gt;собственной базы&lt;/marker&gt;.&lt;br/&gt;
 Желательно найти тот самый
-&lt;marker name="car_position"&gt;БТР&lt;/marker&gt;,
+&lt;marker name="car_position"&gt;IFV-6a Гепард&lt;/marker&gt;,
 он оборудован тепловизором, который может пригодиться в ходе операции.
 				</Original>
 			</Key>
@@ -79,11 +74,9 @@
 			</Key>
 			<Key ID="STR_A3RU_OF_MissionAdditional">
 				<Original>
-Боевой запас катера уменьшен.&lt;br/&gt;
 Команда миномета имеет ДВ в ящике.&lt;br/&gt;
 Спецназ, тимлидеры и снайпера имеют Fireteam HUD.&lt;br/&gt;
-БТР где-то в рамках красного круга.&lt;br/&gt;
-Спасибо Dren's Editor.&lt;br/&gt;
+IFV-6a Гепард где-то в рамках красного круга.&lt;br/&gt;
 				</Original>
 			</Key>
 		</Container>

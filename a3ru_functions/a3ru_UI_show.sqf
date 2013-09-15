@@ -4,7 +4,7 @@ if !(alive player) exitWith {
 
 _a3ru_actionKey = 221; // Правая клавиша вызова контекстного меню WINDOWS
 if (isClass (configFile >> "a3ru_keys")) then {
-	_a3ru_actionKey = getNumber (configFile >> "a3ru_keys" >> "a3ru_actionMenu" >> "key")
+	_a3ru_actionKey = getNumber (configFile >> "a3ru_common_keys" >> "a3ru_keys" >> "a3ru_actionMenu" >> "key")
 };
 
 _handled = false;

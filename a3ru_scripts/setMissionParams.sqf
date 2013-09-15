@@ -4,6 +4,7 @@ a3ru_time = paramsArray select 0;
 a3ru_fog = paramsArray select 1;
 a3ru_tags = paramsArray select 2;
 a3ru_preTime = paramsArray select 3;
+a3ru_slotReservation = paramsArray select 4;
 
 if (time < 600) then {
 	switch (a3ru_time) do {

@@ -25,4 +25,10 @@ class Params {
 		texts[] = {"5m", "7m", "10m", "15m"};
 		default = 300;
 	};
+	class a3ru_slotReservation {
+		title = "$STR_A3RU_slotReservation";
+		values[] = {0,1};
+		texts[] = {$STR_A3RU_on,$STR_A3RU_off};
+		default = 0;
+	};
 };

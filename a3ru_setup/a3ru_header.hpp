@@ -1,4 +1,4 @@
-atrium_version = 0.921;
+atrium_version = 0.961;
 
 respawn = 1;
 respawndelay = 3;

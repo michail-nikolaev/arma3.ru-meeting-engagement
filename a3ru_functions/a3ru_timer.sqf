@@ -17,9 +17,9 @@ _ctrlBackIter = 0;
 
 while { !a3ru_started } do {
 	if (a3ru_timerCorr) exitWith { a3ru_timerCorr = false };
-	if (_time <= 0) exitWith {};
-
 	_time = _time1 - diag_tickTime + _a3ru_startTime;
+	if (_time <= 0) exitWith {};
+	
 	_minutes = floor (_time / 60);
 	_seconds = floor (_time mod 60);
 	if (_time < 0) then
